@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="NumberGuesser.css" />
+    <script type="text/javascript" src="NumberGuesser.js"></script>
+</head>
+<body>
+    <div id="fullHeightContainer">
+        <div id="titleContainer">
+            <h1 id="titleHeader">Number Guessing Game</h1>
+        </div>
+        <div id="mainContainer">
+            <label id="instructionLabel"></label>
+            <br />
+            <label>Attempts Remaining: </label>
+            <label id="attemptRemainLabel"></label>
+            <br />
+            <label for="inputField">Enter Guess: </label>
+            <input type="number" id="inputField" />
+            <button type="button" onclick="validateGuess(document.getElementById('inputField').value)">Check Guess</button>
+        </div>
+        <div id="resultContainer">
+            <label id="outputLabel"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        setup()
+    </script>
+</body>
+</html>

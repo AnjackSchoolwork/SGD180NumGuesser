@@ -19,12 +19,16 @@
             <br />
             <label for="inputField">Enter Guess: </label>
             <input type="number" id="inputField" />
-            <button type="button" onclick="validateGuess(document.getElementById('inputField').value)">Check Guess</button>
+            <button type="button" id="checkButton"></button>
         </div>
         <div id="resultContainer">
             <label id="outputLabel"></label>
         </div>
     </div>
+    <!-- 
+        Again, this will ensure that all elements have loaded,
+        before executing the javascript.
+        -->
     <script type="text/javascript">
         setup()
     </script>
